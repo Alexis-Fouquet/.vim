@@ -1,9 +1,12 @@
 " Alexis Fouquet's .vimrc file
-" Last update : 31/08/2024 - Work in progress
+" Last update : 02/09/2024 - Work in progress
 
 set nocompatible
 
+filetype off
 filetype plugin indent on
+
+set rtp+=~/.vim/bundle/Vundle.vim
 
 syntax on
 
@@ -39,12 +42,13 @@ set splitbelow
 " ==== PLUGINS ====
 " =================
 
-call plug#begin()
+call vundle#begin()
 
-Plug 'preservim/nerdtree'
-Plug 'wakatime/vim-wakatime'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/nerdtree'
+Plugin 'wakatime/vim-wakatime'
 
-call plug#end()
+call vundle#end()
 
 " PLUGINS CONFIG
 
