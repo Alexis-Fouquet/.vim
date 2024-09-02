@@ -4,7 +4,6 @@
 set nocompatible
 
 filetype off
-filetype plugin indent on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -14,7 +13,7 @@ syntax on
 
 set autoindent
 set smartindent
-set expandtab
+set noexpandtab
 set smarttab
 set shiftwidth=4
 
@@ -47,8 +46,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
+
+filetype plugin indent on
 
 " PLUGINS CONFIG
 
