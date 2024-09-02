@@ -49,6 +49,7 @@ call plug#end()
 " PLUGINS CONFIG
 
 " Start NERDTree when Vim starts with a directory argument.
+" Code from the NERDTree README
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter *
             \ if argc() == 1
