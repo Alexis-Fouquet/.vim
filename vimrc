@@ -7,13 +7,30 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
+set splitbelow
+
+" =================
+" ==== PLUGINS ====
+" =================
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/nerdtree'
+Plugin 'wakatime/vim-wakatime'
+Plugin 'tpope/vim-sensible'
+
+call vundle#end()
+
+filetype plugin indent on
+
 syntax on
 
 " INDENT AND TABS
 
 set autoindent
 set smartindent
-set noexpandtab
+set expandtab
 set smarttab
 set shiftwidth=4
 
@@ -35,22 +52,6 @@ set ignorecase
 set smartcase
 
 set splitright
-set splitbelow
-
-" =================
-" ==== PLUGINS ====
-" =================
-
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'preservim/nerdtree'
-Plugin 'wakatime/vim-wakatime'
-Plugin 'tpope/vim-fugitive'
-
-call vundle#end()
-
-filetype plugin indent on
 
 " PLUGINS CONFIG
 
@@ -67,4 +68,11 @@ autocmd VimEnter *
             \ | execute 'cd '.argv()[0]
             \ | endif
 
+runtime! plugin/sensible.vim
+
+set encoding=utf-8 fileencodings=
+
+autocmd Filetype make setlocal noexpandtab
+
+set list listchars=tab:>~,trail:~
 
