@@ -19,6 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'tpope/vim-sensible'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
