@@ -15,13 +15,14 @@ set splitbelow
 
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'preservim/nerdtree'
-Plugin 'wakatime/vim-wakatime'
-Plugin 'tpope/vim-sensible'
-Plugin 'vim-airline/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
+Plugin 'VundleVim/Vundle.vim'    " OK - Need it for compatibility
+Plugin 'preservim/nerdtree'      " OK
+Plugin 'wakatime/vim-wakatime'   " OK - Need to enter key
+Plugin 'tpope/vim-sensible'      " ~  - Compatibility
+Plugin 'vim-airline/vim-airline' " OK
+Plugin 'airblade/vim-gitgutter'  " OK
+Plugin 'tpope/vim-fugitive'      " ~  - Airline
+Plugin 'w0rp/ale'                " TEST
 
 call vundle#end()
 
@@ -70,6 +71,9 @@ autocmd VimEnter *
             \ | enew
             \ | execute 'cd '.argv()[0]
             \ | endif
+
+" ALE
+let g:ale_completion_enabled = 1
 
 runtime! plugin/sensible.vim
 
