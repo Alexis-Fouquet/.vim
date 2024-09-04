@@ -20,6 +20,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'tpope/vim-sensible'
 Plugin 'vim-airline/vim-airline'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 
