@@ -44,7 +44,7 @@ set number
 
 " PAIRS
 
-set showmatch
+" set showmatch
 
 " SEARCH
 
