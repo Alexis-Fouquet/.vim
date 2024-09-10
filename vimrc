@@ -23,6 +23,7 @@ Plugin 'vim-airline/vim-airline' " OK
 Plugin 'airblade/vim-gitgutter'  " OK
 Plugin 'tpope/vim-fugitive'      " ~  - Airline
 Plugin 'w0rp/ale'                " TEST
+Plugin 'ervandew/supertab'       " TEST
 
 call vundle#end()
 
@@ -74,6 +75,7 @@ autocmd VimEnter *
 
 " ALE
 let g:ale_completion_enabled = 1
+let g:ale_lint_delay = 4000
 
 runtime! plugin/sensible.vim
 
@@ -82,4 +84,6 @@ set encoding=utf-8 fileencodings=
 autocmd Filetype make setlocal noexpandtab
 
 set list listchars=tab:>~,trail:~
+
+let g:airline_powerline_fonts = 1
 
