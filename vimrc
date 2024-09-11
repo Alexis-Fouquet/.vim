@@ -24,6 +24,7 @@ Plugin 'airblade/vim-gitgutter'  " OK
 Plugin 'tpope/vim-fugitive'      " ~  - Airline
 Plugin 'w0rp/ale'                " TEST
 Plugin 'ervandew/supertab'       " TEST
+Plugin 'ryanoasis/vim-devicons'  " TEST
 
 call vundle#end()
 
