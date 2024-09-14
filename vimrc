@@ -24,7 +24,8 @@ Plugin 'airblade/vim-gitgutter'  " OK
 Plugin 'tpope/vim-fugitive'      " ~  - Airline
 Plugin 'w0rp/ale'                " TEST
 Plugin 'ervandew/supertab'       " TEST
-Plugin 'ryanoasis/vim-devicons'  " TEST
+Plugin 'ryanoasis/vim-devicons'  " OK
+Plugin 'junegunn/fzf'            " TEST
 
 call vundle#end()
 
@@ -87,4 +88,5 @@ autocmd Filetype make setlocal noexpandtab
 set list listchars=tab:>~,trail:~
 
 let g:airline_powerline_fonts = 1
-
+let g:fzf_vim = {}
+let g:fzf_vim.preview_window = ['right,50%', 'ctrl-/']
