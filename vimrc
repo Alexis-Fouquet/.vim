@@ -1,5 +1,4 @@
 " Alexis Fouquet's .vimrc file
-" Last update : 02/09/2024 - Work in progress
 
 set nocompatible
 
