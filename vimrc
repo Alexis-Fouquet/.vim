@@ -25,6 +25,7 @@ Plugin 'w0rp/ale'                " TEST
 Plugin 'ervandew/supertab'       " TEST
 Plugin 'ryanoasis/vim-devicons'  " OK
 Plugin 'junegunn/fzf'            " TEST
+Plugin 'jiangmiao/auto-pairs'    " TEST
 
 call vundle#end()
 
