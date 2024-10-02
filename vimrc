@@ -14,18 +14,23 @@ set splitbelow
 
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'    " OK - Need it for compatibility
-Plugin 'preservim/nerdtree'      " OK
-Plugin 'wakatime/vim-wakatime'   " OK - Need to enter key
-Plugin 'tpope/vim-sensible'      " ~  - Compatibility
-Plugin 'vim-airline/vim-airline' " OK
-Plugin 'airblade/vim-gitgutter'  " OK
-Plugin 'tpope/vim-fugitive'      " ~  - Airline
-Plugin 'w0rp/ale'                " TEST
-Plugin 'ervandew/supertab'       " TEST
-Plugin 'ryanoasis/vim-devicons'  " OK
-Plugin 'junegunn/fzf'            " TEST
-Plugin 'jiangmiao/auto-pairs'    " TEST
+Plugin 'VundleVim/Vundle.vim'      " OK - Need it for compatibility
+Plugin 'preservim/nerdtree'        " OK
+Plugin 'wakatime/vim-wakatime'     " OK - Need to enter key
+Plugin 'tpope/vim-sensible'        " ~  - Compatibility
+Plugin 'vim-airline/vim-airline'   " OK
+Plugin 'airblade/vim-gitgutter'    " OK
+Plugin 'tpope/vim-fugitive'        " ~  - Airline
+Plugin 'w0rp/ale'                  " TEST
+Plugin 'ervandew/supertab'         " TEST
+Plugin 'ryanoasis/vim-devicons'    " OK
+
+" OK - Configuration in progress
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
+
+Plugin 'jiangmiao/auto-pairs'      " TEST
+Plugin 'easymotion/vim-easymotion' " TEST
 
 call vundle#end()
 
