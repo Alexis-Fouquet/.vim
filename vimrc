@@ -31,6 +31,7 @@ Plugin 'junegunn/fzf.vim'
 
 Plugin 'jiangmiao/auto-pairs'      " TEST
 Plugin 'easymotion/vim-easymotion' " TEST
+Plugin 'junegunn/rainbow_parentheses.vim' " TEST
 
 call vundle#end()
 
@@ -45,6 +46,7 @@ set smartindent
 set expandtab
 set smarttab
 set shiftwidth=4
+set tabstop=4
 
 " RULERS
 
