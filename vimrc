@@ -117,3 +117,7 @@ let g:ale_c_cc_options = '-std=c99 -Wall -Wextra' . gtk_flags
 " let g:ale_clangtidy_options = gtk_flags
 let g:ale_c_clangtidy_extra_options = gtk_flags
 let g:ale_linters = {'c': ['cc', 'cppcheck', 'cpplint', 'cquery', 'flawfinder']}
+
+let g:mapleader = " "
+map <leader>f :Files<CR>
+nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
